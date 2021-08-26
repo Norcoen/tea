@@ -61,7 +61,7 @@ class Tea extends AbstractEntity
     }
 
     public function setInternalNotes(string $notes): void {
-        $this->internalNotes = $notes;
+        $this->internalNote = $notes;
     }
 
     public function getImage(): ?FileReference
