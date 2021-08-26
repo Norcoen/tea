@@ -13,10 +13,10 @@ $tca = [
         'searchFields' => 'title, description',
     ],
     'interface' => [
-        'showRecordFieldList' => 'title, description, image',
+        'showRecordFieldList' => 'title, description, internalNotes, image',
     ],
     'types' => [
-        '1' => ['showitem' => 'title, description, image'],
+        '1' => ['showitem' => 'title, description, internalNotes, image'],
     ],
     'columns' => [
         'title' => [
@@ -33,6 +33,16 @@ $tca = [
             'config' => [
                 'type' => 'text',
                 'enableRichtext' => true,
+                'rows' => 8,
+                'cols' => 40,
+                'max' => 2000,
+                'eval' => 'trim',
+            ],
+        ],
+        'internalNotes' => [
+            'label' => 'LLL:EXT:tea/Resources/Private/Language/locallang_db.xlf:tx_tea_domain_model_product_tea.internalNotes',
+            'config' => [
+                'type' => 'text',
                 'rows' => 8,
                 'cols' => 40,
                 'max' => 2000,
