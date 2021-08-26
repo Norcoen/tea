@@ -6,6 +6,7 @@ namespace TTN\Tea\Domain\Repository\Product;
 
 use TTN\Tea\Domain\Repository\Traits\StoragePageAgnosticTrait;
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
+use TYPO3\CMS\Extbase\Persistence\QueryResultInterface;
 use TYPO3\CMS\Extbase\Persistence\Repository;
 
 /**
